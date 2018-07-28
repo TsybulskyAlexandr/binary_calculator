@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function(event) {
-  document.forms['decimalToBinary'].onsubmit = function(){    
+  /*document.forms['1decimalToBinary'].onsubmit = function(){    
 	event.preventDefault();  
 	resultOut('');
 	var number = document.getElementById("decimalNumber").value;      
@@ -16,15 +16,31 @@ window.addEventListener("DOMContentLoaded", function(event) {
 	binaryNumber = binaryNumber.split("").reverse().join("");
 	return resultOut(binaryNumber);
   }  
-  document.forms['binaryToDecimal'].onsubmit = function(){
+  document.forms['1binaryToDecimal'].onsubmit = function(){
   	event.preventDefault();
   	resultOut('');
   	var number = document.getElementById("binaryNumber").value;
 	if(number == '') return resultOut("Поле ввода не должно быть пустым");
-	if(!number.match(/^\d+$/)) return resultOut("Поле должно содержать только цифры");
-	if(number < 0 || number > 1) return resultOut("Введите число в двоично представлении");
+	if(!number.match(/^\d+$/)) return resultOut("Поле должно содержать только цифры");	
+	if(number.match(/[^01]+$/)) return resultOut("Введите число в двоично представлении");
+	numberLength = number.length;
+	index = 0;
+	power = numberLength-1;	
+	var decimalNumber = 0;	
+	while (index < numberLength) {
+		decimalNumber += (number[index]) * (Math.pow(2,power));		
+		index++;
+		power--;
+	}
+	return resultOut(decimalNumber);
   }
   function resultOut(string) {
-	return document.getElementById('binaryToDecimal').getElementsByClassName('result_out')[0].innerHTML = string;
+	//return this.getElementsByClassName('result_out')[0].innerHTML = string;
+  }*/
+  
+  function getNumber (event){
+  	event.preventDefault();
+  	console.log(this);
   }
+
 });
