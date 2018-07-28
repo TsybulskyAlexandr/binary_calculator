@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Binary calculator</title>
   <link rel="stylesheet" href="main.css">
   <script src="main.js"></script>
 </head>
 <body>
-  <h1 class="header">Калькулятор в двоичной системе счисления</h1>
-  <h2>Перевод числа из десятичной в двоичную систему</h2>
-  <form id="test" onsubmit="return false">
-    <input type="text" id="decimal_number" placeholder="Введите десятичное число." />
-    <input type="button" id="button_click" value="Перевести">
+  <H1>Калькулятор в двоичной системе счисления</H1>
+  <h2>Первод числа в двоичную систему из десятичной</h2>
+  <form action="#" method="#" name="decimalToBinary" id="decimalToBinary">
+    <label for="decimalNumber">Введите десятичное число</label>
+    <input type="text" id="decimalNumber">
+    <input type="submit" value="Перевести" id="buttonToTranslateTheNumber">
+    <div class="result_out">
+    </div>
   </form>
-  <h2>Перевод числа из двоичной в десятичную систему</h2>
 </body>
 </html>

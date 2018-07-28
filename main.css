@@ -1,15 +1,5 @@
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  font-family: Verdana, san-serif;
-  font-size: 14px;
-}
-.header {
-  text-align: center;
-  padding: 50px 0;
-}
-#button_click {
-  width: 100px;
+  box-sizing: border-box;
 }
