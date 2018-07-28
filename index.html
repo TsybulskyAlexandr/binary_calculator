@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Binary calculator</title>
-  <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
+	<meta charset="UTF-8">
+  	<title>Binary calculator</title>
+  	<link rel="stylesheet" href="main.css">
+  	<script src="main.js"></script>
 </head>
 <body>
-  <H1>Калькулятор в двоичной системе счисления</H1>
-  <h2>Первод числа в двоичную систему из десятичной</h2>
-  <form action="#" method="#" name="decimalToBinary" id="decimalToBinary">
-    <label for="decimalNumber">Введите десятичное число</label>
-    <input type="text" id="decimalNumber">
-    <input type="submit" value="Перевести" id="buttonToTranslateTheNumber">
-    <div class="result_out">
-    </div>
-  </form>
+  	<H1>Калькулятор в двоичной системе счисления</H1>
+  	<h2>Первод числа в двоичную систему из десятичной</h2>
+  	<form action="#" method="#" name="decimalToBinary" id="decimalToBinary">
+    	<label for="decimalNumber">Введите десятичное число</label>
+    	<input type="text" id="decimalNumber">
+    	<input type="submit" value="Перевести" class="button">
+    	<div class="result_out"></div>
+  	</form>
+  	<h2>Первод числа в десятичную систему из двоичной</h2>
+  	<form action="#" method="#" name="binaryToDecimal" id="binaryToDecimal">
+   	 	<label for="binaryNumber">Введите двоичное число</label>
+    	<input type="text" id="binaryNumber">
+    	<input type="submit" value="Перевести">
+    	<div class="result_out">
+    	</div>
+  	</form>
 </body>
 </html>
+
