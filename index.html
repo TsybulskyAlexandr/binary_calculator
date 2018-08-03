@@ -9,20 +9,24 @@
 <body>
   	<H1>Калькулятор в двоичной системе счисления</H1>
   	<h2>Первод числа в двоичную систему из десятичной</h2>
-  	<form action="#" method="#" name="decimalToBinary" id="decimalToBinary">
+
+  	<form action="#" method="#" name="decimalToBinary" id="decimalToBinary" class="form">
     	<label for="decimalNumber">Введите десятичное число</label>
-    	<input type="text" id="decimalNumber">
-    	<input type="submit" value="Перевести" class="button" onClick="getNumber()">
+    	<input type="text" id="decimalNumber" name="number">
+    	<input type="submit" value="Перевести" data-action="decimalToBinary" class="button">
     	<div class="result_out"></div>
   	</form>
+
   	<h2>Первод числа в десятичную систему из двоичной</h2>
-  	<form action="#" method="#" name="binaryToDecimal" id="binaryToDecimal">
+
+  	<form action="#" method="#" name="binaryToDecimal" id="binaryToDecimal" class="form">
    	 	<label for="binaryNumber">Введите двоичное число</label>
-    	<input type="text" id="binaryNumber">
-    	<input type="submit" value="Перевести" onClick="getNumber()">
+    	<input type="text" id="binaryNumber" name="number">
+    	<input type="submit" value="Перевести" data-action="binaryToDecimal" class="button">
     	<div class="result_out">
     	</div>
   	</form>
+  	
 </body>
 </html>
 
